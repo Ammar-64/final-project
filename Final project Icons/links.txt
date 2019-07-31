@@ -7,5 +7,24 @@ gifts : https://media.istockphoto.com/vectors/gift-box-lineal-color-illustration
 tech :https://st2.depositphotos.com/5689602/12248/v/950/depositphotos_122485078-stock-illustration-usb-cable-icon-flat-and.jpg 
 drinks : https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1097142/300/200/m1/fpnw/wm0/soda-with-straw-flat-icon-01-.jpg?1458314277&s=662212274ff9263009a9a7b952d07a2e
 toys :https://images.freeimages.com/images/premium/large-thumbs/4816/48163054-toy-car-flat-icon-with-long-shadow.jpg
+-----------------------------------------
+FOOD : 
+burger King : https://primemall.s3-eu-west-1.amazonaws.com/images/brand_logo/NkpEx1fbe_brand_logo_-main-.jpg?1445523740509
+McDonald's : https://pbs.twimg.com/profile_images/1104147812571381763/LfL1-e6T_400x400.png
+Popeyes : https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Popeyes_Louisiana_Kitchen.svg/220px-Popeyes_Louisiana_Kitchen.svg.png
+Domninoz Pizza : https://icon2.kisspng.com/20180529/klk/kisspng-domino-s-pizza-pizza-delivery-logo-5b0deb61c6a053.2046962815276388818136.jpg
+----------------------------------------------------
+GROCERY :
+Bim : https://upload.wikimedia.org/wikipedia/commons/3/30/Logo_of_B%C4%B0M.PNG
+A101 :https://pbs.twimg.com/profile_images/996489765544448000/kwXc3FEH_400x400.jpg
+Migros : https://www.logovector.org/wp-content/uploads/logos/png/m/migros_logo.png
+-------------------
+DRINKS : 
+Cola :https://media.npr.org/assets/img/2015/11/19/salt-iconic-branding-0037edit_custom-106133bb015b56c78e6bd554cfcbc9cc648156bb-s800-c85.jpg
+Soda :
+Natual Juice : 
+
+
+
 
 
