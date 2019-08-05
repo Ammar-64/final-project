@@ -4,14 +4,22 @@ import './App.css';
 import ShoppingCart from './ShoppingCart'
 import Products from './Products';
 import Header from './Header'
+import Categories from './Components/Categories';
+import Container from './Components/Container';
+import ButtonBases from './Components/Tests';
+import Dropdown from './Components/DropdownList';
 
 class App extends React.Component {
   render(){
   return (
     <div className="App">
       <Header></Header>
+    <Container>
       <Products/>
-    </div>
+      <ButtonBases/>
+      
+      </Container>
+      </div>
   );
   }
 }
