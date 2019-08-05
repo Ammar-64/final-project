@@ -8,7 +8,7 @@ import Categories from './Components/Categories';
 import Container from './Components/Container';
 import ButtonBases from './Components/Tests';
 import Dropdown from './Components/DropdownList';
-import ContactPage from './Contactus'
+
 
 class App extends React.Component {
   render(){
@@ -18,7 +18,7 @@ class App extends React.Component {
     <Container>
       <Products/>
       <ButtonBases/>
-      <ContactPage />
+
       </Container>
       </div>
   );
