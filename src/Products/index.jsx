@@ -2,8 +2,6 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Product from '../Product'
 import styles from '../styles.module.css'
-import Typography from '@material-ui/core/Typography'
-import Link from '@material-ui/core/Link';
 
 const Cards = [
   {title: "Banana", 
@@ -22,23 +20,6 @@ const Cards = [
 
 
 class Products extends React.Component{
-    state = {
-        quantity: 1,
-    };
-    
-    componentDidMount(){
-    //   let response = await fetch("https://firestore.googleapis.com/v1/projects/portfolio-mujz/databases/(default)/documents/projects/");
-    //   let json = await response.json();
-    this.updateQuantity = this.updateQuantity.bind(this);
-    }
-
-    //Reset Quantity
-    updateQuantity(qty) {
-        console.log("quantity added...");
-        this.setState({
-        quantity: qty
-        });
-    }
 
     render(){
         return (
@@ -58,8 +39,7 @@ class Products extends React.Component{
                   title={currentValue.title} 
                   details={currentValue.details} 
                   price={currentValue.price}
-                  quantity={this.state.quantity}
-                  updateQuantity={this.updateQuantity}
+                  addToCart={this.props.addToCart}
                   />
                 </Grid>)
               }.bind(this))

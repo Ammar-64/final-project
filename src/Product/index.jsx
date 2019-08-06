@@ -6,24 +6,56 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import styles from '../styles.module.css'
 import Button from '@material-ui/core/Button';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import IconButton from '@material-ui/core/IconButton';
 import Box from '@material-ui/core/Box';
-import Badge from '@material-ui/core/Badge';
 import Counter from '../Counter';
+import { MDBBtn } from "mdbreact";
 
 class Product extends React.Component{
-    componentDidMount(props){
+    state = {
+        selectedProduct: {},
+        isAdded: false,
+        quantity: 1
+      };
 
-    }
 
-    increaseFavorite = () =>{
-        this.setState({ favoriteCount: this.state.favoriteCount + 1});
+      increment() {
+        this.setState((state) => {
+            return {quantity: state.quantity + 1};
+          });
+      }
+    
+      decrement() {
+        if (this.state.quantity <= 1) {
+          return this.state.quantity;
+        } else {
+            this.setState((state) => {
+                return {quantity: state.quantity - 1};
+              });
+        }
+      }
+
+      addToCart(image, name, price, quantity) {
+        this.setState(
+        {
+            selectedProduct: {
+            image: image,
+            title: name,
+            price: price,
+            Quantity: quantity
+            }
+        },
+        function() {
+            this.props.addToCart(this.state.selectedProduct);
+        }
+        );
+        this.setState(
+        {
+            isAdded: true
+        }
+        );
     }
 
     render(){
-        let quantity = this.props.quantity;
-        let updateQuantity = this.props.updateQuantity;
         return (
                 <Card align="left" className={styles.cardSection}>
                     <Box>  
@@ -48,9 +80,16 @@ class Product extends React.Component{
                     <Box>
                     <CardActions className={styles.actionsSection}>
                         <Counter 
-                         Quantity={quantity}
-                         UpdateQuantity={updateQuantity}/>
-                        <Button variant="contained" color="secondary">
+                         quantity={this.state.quantity}
+                         incrementQuantity={this.increment.bind(this)}
+                         decrementQuantity={this.decrement.bind(this)}/>
+                        <Button variant="contained" color="secondary" onClick={this.addToCart.bind(
+                                this,
+                                this.props.imageURL,
+                                this.props.title,
+                                this.props.price,
+                                this.state.quantity
+                                )}>
                             Add to cart
                         </Button>                      
                     </CardActions>

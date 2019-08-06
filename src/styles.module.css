@@ -22,49 +22,43 @@
 
 .stepper_input {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
   display: -webkit-flex;
   color: gray;
   max-width: 120px;
   margin: 6px auto;
 }
 
-.increment,.decrement {
-    height: 24px;
-    width: 24px;
-    border: 1px solid gray;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 50%;
-    text-decoration: none;
-    color: inherit;
-    font-size: 24px;
-    line-height: 22px;
-    -moz-user-select: none;
-    -webkit-user-select: none;
+
+.quantity {
+  height: 24px;
+  width: 48px;
+  text-align: center;
+  margin: 0 12px;
+  border-radius: 2px;
+  border: 1px solid gray;
 }
 
-.increment,.decrement:hover {
-      color: green;
-      border-color: green;
-    }
+.quantity:focus {
+    outline: none;
+    border-color: green;
+  }
 
-.increment,.decrement:active {
-      color: black;
-      border-color: green;
-      background: white;
-    }
-  
 
-    .quantity {
-      height: 24px;
-      width: 48px;
-      text-align: center;
-      margin: 0 12px;
-      border-radius: 2px;
-      border: 1px solid gray;
-    }
+.cartItem{
+  max-width: 300px;
+  display: flex;
+  direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
 
-    .quantity:focus {
-        outline: none;
-        border-color: green;
-      }
+.shoppingCart{
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 0.5px black solid;
+  z-index: 1;
+}
