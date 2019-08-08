@@ -8,15 +8,13 @@
         "bootstrap": "^4.3.1",
         "material-ui-popup-state": "^1.4.0",
         "mdbreact": "^4.19.0",
-<<<<<<< HEAD
-=======
         "node-sass": "^4.12.0",
->>>>>>> 6c36fe8d10649ac0c062fe696ea1f441e16d5573
         "react": "^16.8.6",
         "react-bootstrap": "^1.0.0-beta.10",
         "react-dom": "^16.8.6",
         "react-popper": "^1.3.3",
         "react-scripts": "3.0.1",
+        "request": "^2.88.0",
         "typeface-roboto": "0.0.75"
     },
     "scripts": {

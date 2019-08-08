@@ -20,13 +20,10 @@ class App extends React.Component {
     };
     this.addToCart = this.addToCart.bind(this);
     this.removeFromCart = this.removeFromCart.bind(this);
-    this.sumTotalItems = this.sumTotalItems.bind(this);
-    this.sumTotalAmount = this.sumTotalAmount.bind(this);
     this.checkProduct = this.checkProduct.bind(this);
   }
 
   addToCart(selectedProducts) {
-    debugger
     let cartItem = this.state.cart;
     let productTitle = selectedProducts.title;
     let productQty = selectedProducts.Quantity;
@@ -44,8 +41,10 @@ class App extends React.Component {
       cart: cartItem
     });
 
-    this.sumTotalItems(this.state.cart);
-    this.sumTotalAmount(this.state.cart);
+    
+
+    // this.sumTotalItems(this.state.cart);
+    // this.sumTotalAmount(this.state.cart);
   }
 
   removeFromCart(selectedProducts){
@@ -58,8 +57,8 @@ class App extends React.Component {
       cart: cartItem
     });
 
-    this.sumTotalItems(this.state.cart);
-    this.sumTotalAmount(this.state.cart);
+    // this.sumTotalItems(this.state.cart);
+    // this.sumTotalAmount(this.state.cart);
   }
 
   checkProduct(productTitle) {
@@ -69,30 +68,29 @@ class App extends React.Component {
     });
   }
 
-  sumTotalItems() {
-    let total = 0;
-    let cart = this.state.cart;
-    total = cart.length;
-    this.setState({
-      totalItems: total
-    });
-  }
+  // sumTotalItems() {
+  //   let total = 0;
+  //   let cart = this.state.cart;
+  //   total = cart.length;
+  //   this.setState({
+  //     totalItems: total
+  //   });
+  // }
   
-  sumTotalAmount() {
-    let total = 0;
-    let cart = this.state.cart;
-    for (var i = 0; i < cart.length; i++) {
-      total += cart[i].price * parseInt(cart[i].quantity);
-    }
-    this.setState({
-      totalAmount: total
-    });
-  }
+  // sumTotalAmount() {
+  //   let total = 0;
+  //   let cart = this.state.cart;
+  //   for (var i = 0; i < cart.length; i++) {
+  //     total += cart[i].price * parseInt(cart[i].quantity);
+  //   }
+  //   this.setState({
+  //     totalAmount: total
+  //   });
+  // }
 
   render(){
   return (
     <div className="App">
-<<<<<<< HEAD
       <ShoppingCart
       total={this.state.totalAmount}
       totalItems={this.state.totalItems}
@@ -102,15 +100,6 @@ class App extends React.Component {
       <Products
       addToCart={this.addToCart}/>
     </div>
-=======
-      <Header></Header>
-    <Container>
-      <Products/>
-      <ButtonBases/>
-
-      </Container>
-      </div>
->>>>>>> 6c36fe8d10649ac0c062fe696ea1f441e16d5573
   );
   }
 }

@@ -39,14 +39,20 @@ class Product extends React.Component{
     render(){
         let totalPrice = parseInt(this.props.quantity) * parseFloat(this.props.price);
         return (
-                <Box align="center" className={styles.cartItem}>  
+                <Box align="center" className={styles.cartItem}>
+                    <Box> 
                     <img src={this.props.imageURL} height="42" width="42"/>
+                    </Box>
+                    <Box>
                     <Typography variant="h5" component="h5">
                         {this.props.title}
                     </Typography>
+                    </Box>
+                    <Box>
                     <Typography variant="body2" component="h6">
                         Quantity : {this.props.quantity}
                     </Typography>
+                    </Box>
                     <Typography variant="body2" color="textSecondary" component="p">
                         Price : {this.props.price}
                     </Typography> 

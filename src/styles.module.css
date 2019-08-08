@@ -1,3 +1,7 @@
+.shoppingCartButton{
+  margin-top: 5%; 
+}
+
 .cardSection{
   max-width: 250px;
   height: 100%;
@@ -24,7 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px black solid;
   display: -webkit-flex;
   color: gray;
   max-width: 120px;
@@ -52,13 +55,14 @@
   display: flex;
   direction: row;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
 }
 
 .shoppingCart{
-  margin-top: 10px;
+  width: 500px;
+  text-align: center;
   background-color: white;
   border-radius: 10px;
-  border: 0.5px black solid;
   z-index: 1;
 }
